@@ -182,7 +182,7 @@ app.get('/api/users/:_id/logs', async(req, res)=>{
         }        
       }   
     }
-    const matching = from && to && {... obj}
+    const matching = (from || to) && {... obj}  
     const user = await User.findById(userId).populate({
       path:'log',
       options:{
