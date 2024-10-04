@@ -177,8 +177,8 @@ app.get('/api/users/:_id/logs', async(req, res)=>{
     const obj = {
       match:{       
         date:{
-          ... (from && {$gte: new Date(from)}), // fecha mayor o igual que "from".
-          ... (to && {$lte: new Date (to)})     //fecha menor o igual que "from" .  
+          ... (from && {$gte: new Date(from)}), // fecha mayor o igual que "from"
+          ... (to && {$lte: new Date (to)})     //fecha menor o igual que "from"   
         }        
       }   
     }
