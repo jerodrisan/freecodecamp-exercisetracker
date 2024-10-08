@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended:true}))
 mongoose.set('strictQuery',false) //Desabilitamos modo estricto de consultas. Ver que pasa si no se adaptan al modelo de esquema. 
 mongoose.connect(process.env.MONGODB_URL)
 
-/*--------*/
+/*--------*////
 //Modelo de usuario
 const userSchema= new mongoose.Schema({
   username:{
